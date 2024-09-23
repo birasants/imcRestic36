@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #4CAF50;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 4rem;
+  text-align: center;
+  position: relative;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 24px;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  display: none;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label, form input, form button {
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    width: 100%;
+    top: 50px;
+    left: 0;
+  }
+  
+  .menu.active {
+    display: block;
+  }
+  
+  .menu ul {
+    display: block;
+    text-align: center;
+  }
+  
+  .menu ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .menu {
+    display: block;
+  }
+  
+  .menu ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+}

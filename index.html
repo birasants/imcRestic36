@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saúde e Cuidados Pessoais</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <nav class="menu">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#alimentacao">Alimentação</a></li>
+        <li><a href="#exercicios">Exercícios</a></li>
+        <li><a href="#saude-mental">Saúde Mental</a></li>
+        <li><a href="#calculadora-imc">Calculadora de IMC</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h1>Bem-vindo ao site de Saúde e Cuidados Pessoais</h1>
+    <p>Descubra dicas e informações sobre como manter um estilo de vida saudável e equilibrado.</p>
+  </section>
+
+  <section id="alimentacao">
+    <h2>Alimentação Saudável</h2>
+    <p>Mantenha uma dieta equilibrada com alimentos ricos em nutrientes essenciais para o seu corpo.</p>
+  </section>
+
+  <section id="exercicios">
+    <h2>Exercícios Físicos</h2>
+    <p>Pratique atividades físicas regularmente para melhorar sua saúde física e mental.</p>
+  </section>
+
+  <section id="saude-mental">
+    <h2>Saúde Mental</h2>
+    <p>Cuide da sua mente com técnicas de relaxamento, meditação e gerenciamento de estresse.</p>
+  </section>
+
+  <section id="calculadora-imc">
+    <h2>Calculadora de IMC</h2>
+    <form onsubmit="calcularIMC(); return false;">
+      <label for="peso">Peso (kg):</label>
+      <input type="number" id="peso" required>
+      <label for="altura">Altura (m):</label>
+      <input type="number" step="0.01" id="altura" required>
+      <button type="submit">Calcular IMC</button>
+    </form>
+    <p id="resultado-imc"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
